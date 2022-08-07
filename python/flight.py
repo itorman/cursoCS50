@@ -12,11 +12,16 @@ class Flight():
     def openSeats(self):
         if len(self.passengers) < self.capacity:
             return True 
+    def availableSeats(self):
+        return self.capacity - len(self.passengers)
   
 
-vuelo = Flight(3)
-vuelo.passengers = ["Juan", "Pedro"]
+vuelo = Flight(5)
+pasajerosList = ["Juan", "Pedro", "Maria"]
+for person in pasajerosList:
+    vuelo.addPasssenger(person)
+    print(f"El pasajero {person} ha sido añadido")
+
 print(vuelo.passengers)
 print(vuelo.capacity)
 vuelo.addPasssenger("Ana")
-print(vuelo.passengers)
