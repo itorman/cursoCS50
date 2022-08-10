@@ -15,22 +15,28 @@
                 Google<FONT SIZE=3>Advanced Search</FONT>
             </div>
             <div class="query">
-                <form action="https://www.google.com/search">
-                    <input class="searchbar" type="search">
-                    <br>
-                    <input class="submit" type="submit" value="Google Search">
-                    <br>
-                    <div class="advance_parmeters">
-                        <label>Find pages with all these words</label><input type="text">
-                        <br>
-                        <label>Find pages with this exact word or phrase</label><input type="text">
-                        <br>
-                        <label>Find pages withny of these words</label><input type="text">
-                        <br>
-                        <label>Find pages with none of these words</label><input type="text">
-                    </div>
-                </form>
+                
+                <div class="advanced_parmeters">                        
+                    <form action="https://www.google.com/search">
+
+                        <label>Find pages with all these words</label>
+                        <input class="advanced_box" type="search" name="as_q">                          
+                    
+                        <label>Find pages with this exact word or phrase</label>
+                        <input class="advanced_box" type="seach" name="as_epq">
+                    
+                        <label>Find pages withny of these words</label>
+                        <input class="advanced_box" type="search" name="as_oq">
+                    
+                        <label>Find pages with none of these words</label>
+                        <input class="advanced_box" type="search" name="as_eq">
+                        
+                        <input id="click" type="submit" value="Advanced Search">
+                    </form>
+                </div>       
             </div>
+             
+           
             <div class="footer">
                 <br>
             </div>
